@@ -1,0 +1,68 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arslaan's Portfolio</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/skins/color-1.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- style switcher  -->
+    <link rel="stylesheet" href="{% static 'css/skins/color-1.css' %}" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-2.css' %}" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-3.css' %}" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-4.css' %}" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="{% static 'css/skins/color-5.css' %}" class="alternate-style" title="color-5" disabled>
+    <link rel="stylesheet" href="{% static 'css/style-switcher.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'image/a.png' %}">
+</head>
+
+<body>
+    <!-- Main Container Start -->
+    <div class="main-container">
+        <!-- Aside start -->
+        {% include 'core/aside.html' %}
+        <!-- Aside end -->
+
+        <!-- Main Content Start -->
+        <div class="main-content">
+            <!-- Home section start -->
+            {% include 'core/home.html' %}
+            <!-- Home section end -->
+
+            <!-- about section start-->
+            {% include 'core/about.html' %}
+            <!-- about section end -->
+
+            <!-- services section start -->
+            {% include 'core/tech_stack.html' %}
+            <!-- services section end -->
+
+            <!-- portfolio section start -->
+            {% include 'core/projects.html' %}
+            <!-- portfolio section end -->
+
+            <!-- contact section start -->
+            {% include 'core/contact.html' %}
+            <!-- contact section end -->
+        </div>
+        <!-- Main Content End -->
+    </div>
+    <!-- Main Container end -->
+     
+    <!-- style switcher Start  -->
+    {% include 'core/switcher.html' %}
+    <!-- style switcher end  -->
+    <!-- JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"
+        integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="{% static 'js/style-switcher.js' %}"></script>
+</body>
+
+</html>     

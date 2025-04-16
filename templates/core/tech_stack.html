@@ -1,0 +1,21 @@
+<section class="service section" id="services">
+    {% for skill in skills %}
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>{{ skill.skill_name }}</h2>
+            </div>
+        </div>
+        <div class="row">
+            {% for stack in skill.stack_set.all %}
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="{{ stack.icon_class }}"></i></div>
+                    <h4>{{stack.technology}}</h4>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% endfor %}
+</section>

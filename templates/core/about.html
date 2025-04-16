@@ -1,0 +1,175 @@
+<section class="about section" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>About Me</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="about-content padd-15">
+                <div class="row">
+                    <div class="about-text padd-15 ">
+                        <h3>I'm Arslaan Darwajkar and <span>Python Full Stack Developer</span></h3>
+                        <p>
+                            A passionate backend developer with strong command over Python, Django, and REST
+                            APIs.
+                            I specialize in building scalable web applications, integrating efficient
+                            databases,
+                            and creating clean, production-ready systems. <br> I’m also exploring AI/ML,
+                            DevOps (Docker, CI/CD), and
+                            cloud platforms like AWS to become a versatile full stack engineer. <br>
+                            I love mentoring others, sharing knowledge, and constantly upgrading my skills
+                            through real-world projects. <br>
+                            Currently upskilling in DSA and System Design through HeyCoach to strengthen my
+                            problem-solving and architecture skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="personal-info padd-15">
+                        <div class="row">
+                            <div class="info-item padd-15">
+                                <p>Birthday : <span>15 sep 2002</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Age : <span>22</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Website : <span>www.domain.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Email : <span>arslaandarvajkar21@gmail.com</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Diploma : <span>Computer Engineering</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>Phone : <span>9096597936 | 7769845876</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>City : <span>Bangalore</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>For Hire : <span>Will be available in 15 days on offer</span></p>
+                            </div>
+                            <div class="info-item padd-15">
+                                <p>For Freelancing : <span>Available right away (with a team of skilled 5
+                                        memebers)</span></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="buttons padd-15">
+                                <a href="{{ resume.file.url }}" class="btn" download>Download CV</a>
+                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="skills padd-15 ">
+                        <div class="row">
+                            <div class="skill-item padd-15">
+                                <h5>Languages</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 96%;"></div>
+                                    <div class="skill-percent">9.6/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Frameworks</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 90%;"></div>
+                                    <div class="skill-percent">9/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>DSA</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 75%;"></div>
+                                    <div class="skill-percent">7.5/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>APIs</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 80%;"></div>
+                                    <div class="skill-percent">8/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Databases</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 80%;"></div>
+                                    <div class="skill-percent">8/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>Ai - Powered Apps (AI/ML integrations)</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 70%;"></div>
+                                    <div class="skill-percent">7/10</div>
+                                </div>
+                            </div>
+                            <div class="skill-item padd-15">
+                                <h5>DevOps</h5>
+                                <div class="progress">
+                                    <div class="progress-in" style="width: 60%;"></div>
+                                    <div class="skill-percent">6/10</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="education padd-15">
+                        <h3 class="title">Education</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- timeline item -->
+                                    <!-- Diploma -->
+                                    {% for edu in education %}
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> {{ edu.start_year }} – {{ edu.end_year }}
+                                        </h3>
+                                        <h4 class="timeline-title">{{ edu.degree }}</h4>
+                                        <p class="timeline-text"><b>{{ edu.institution }} - {{ edu.location }}</b><br>
+                                            {{ edu.description }}</p>
+                                    </div>
+                                    {% endfor %}
+                                    <!-- Qspiders -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="experience padd-15">
+                        <h3 class="title">Experience</h3>
+                        <div class="row">
+                            <div class="timeline-box padd-15">
+                                <div class="timeline shadow-dark">
+                                    <!-- timeline item -->
+                                    {% for exp in experience %}
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i>{{ exp.start_date }} –
+                                            {{ exp.end_date }}</h3>
+                                        <h4 class="timeline-title">{{ exp.position }}, Test Yantra
+                                        </h4>
+                                        <p class="timeline-text">
+                                            {% for point in exp.description.splitlines %}
+                                                <li class="timeline-text">{{ point }}</li>
+                                            {% endfor %}
+                                        </p>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</section>
