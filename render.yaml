@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: arslaan-portfolio
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn arslaan_portfolio.wsgi:application"
+    envVars:
+      - key: DEBUG
+        value: False
+      - key: SECRET_KEY
+        generateValue: true
+      - key: ALLOWED_HOSTS
+        value: arslaan-portfolio.onrender.com
+      - key: DJANGO_SETTINGS_MODULE
+        value: arslaan_portfolio.settings

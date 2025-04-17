@@ -617,11 +617,18 @@ h3.my-profession {
     padding-bottom: 40px;
 }
 
+.service .container .row{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .service .service-item {
     margin-bottom: 3px;
-    flex: 0 0 16.66%;
-    max-width: 16.66%;
-
+    /* border: 1px solid green; */
+    /* flex-wrap: wrap; */
+    flex: 0 0 30.33%;
+    max-width: 33.33%;
+    margin-top: 10px;
 }
 
 .service .service-item .service-item-inner {
