@@ -1,3 +1,4 @@
+{% load static %}
 <section class="about section" id="about">
     <div class="container">
         <div class="row">
@@ -59,8 +60,8 @@
                         </div>
                         <div class="row">
                             <div class="buttons padd-15">
-                                <a href="{{ resume.file.url }}" class="btn" download>Download CV</a>
-                                <a href="#contact" class="btn hire-me">Hire Me</a>
+                                <a href="{% static 'resume/Arslaan_Resume.pdf' %}" class="btn" download>Download CV</a>
+                                <a href="" class="btn hire-me">Hire Me</a>
                             </div>
                         </div>
 
@@ -127,17 +128,46 @@
                                 <div class="timeline shadow-dark">
                                     <!-- timeline item -->
                                     <!-- Diploma -->
-                                    {% for edu in education %}
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
-                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> {{ edu.start_year }} – {{ edu.end_year }}
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2020 – 2023
                                         </h3>
-                                        <h4 class="timeline-title">{{ edu.degree }}</h4>
-                                        <p class="timeline-text"><b>{{ edu.institution }} - {{ edu.location }}</b><br>
-                                            {{ edu.description }}</p>
+                                        <h4 class="timeline-title">Diploma in Computer Engineering</h4>
+                                        <p class="timeline-text"><b>Government Polytechnic Panaji,
+                                                Goa</b><br>
+                                            Specialized in core computer science subjects like Data
+                                            Structures, OOPs, DBMS, Networking, Operating Systems, C/C++ and
+                                            Python development.</p>
                                     </div>
-                                    {% endfor %}
+
                                     <!-- Qspiders -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2023 – 2024
+                                        </h3>
+                                        <h4 class="timeline-title">Full Stack Development (Python)</h4>
+                                        <p class="timeline-text"><b>QSpiders, Bangalore</b><br>
+                                            Completed full-stack development training with in-depth learning
+                                            of Python and framework like Django, RESTful API development,
+                                            advanced frontend technologies (React.js, Bootstrap), and robust
+                                            database systems like MySQL and Oracle, along with real-world
+                                            project implementation and deployment..</p>
+                                    </div>
+
+                                    <!-- HeyCoach  -->
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> 2025 –
+                                            Present</h3>
+                                        <h4 class="timeline-title">Advanced DSA & System Design (Ongoing)
+                                        </h4>
+                                        <p class="timeline-text">
+                                            <b>HeyCoach by Ex-FAANG Mentors</b><br>
+                                            Focused on solving complex DSA problems and mastering high-level
+                                            system design to build scalable and efficient backend
+                                            architectures.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -148,27 +178,53 @@
                             <div class="timeline-box padd-15">
                                 <div class="timeline shadow-dark">
                                     <!-- timeline item -->
-                                    {% for exp in experience %}
                                     <div class="timeline-item">
                                         <div class="circle-dot"></div>
-                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i>{{ exp.start_date }} –
-                                            {{ exp.end_date }}</h3>
-                                        <h4 class="timeline-title">{{ exp.position }}, Test Yantra
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i>Mar 2024 –
+                                            Present</h3>
+                                        <h4 class="timeline-title">Associate Software Engineer, Test Yantra
                                         </h4>
                                         <p class="timeline-text">
-                                            {% for point in exp.description.splitlines %}
-                                                <li class="timeline-text">{{ point }}</li>
-                                            {% endfor %}
+                                            <li class="timeline-text">Currently working as an Associate
+                                                Software Engineer and Python Team Lead at Test Yantra, where
+                                                I lead and deliver comprehensive Python Full Stack training
+                                                programs for aspiring developers.</li>
+                                            <li class="timeline-text">
+                                                My role involves designing industry-relevant full-stack
+                                                curricula focused on Python, Django, RESTful APIs, Databases
+                                                and Web-Tech.
+                                                I mentor junior trainers and students, conduct live project
+                                                walkthroughs, and ensure that the training outcomes align
+                                                with real-world industry requirements.</li>
+                                            <li class="timeline-text">Apart from training responsibilities,
+                                                I actively contribute to in-house and client-based backend
+                                                development projects, building and optimizing Django REST
+                                                Framework APIs, integrating third-party services,
+                                                and implementing best practices in code structure, security,
+                                                and scalability.</li>
+                                        </p>
+
+                                    </div>
+
+                                    <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                        <h3 class="timeline-date"><i class="fa fa-calendar"></i> Aug 2022 –
+                                            Oct 2022</h3>
+                                        <h4 class="timeline-title">Web Developer Trainee, Octalogic Tech
+                                        </h4>
+                                        <p class="timeline-text">
+                                            <li class="timeline-text">Worked on frontend development using
+                                                HTML,
+                                                CSS, JavaScript and React.</li>
+                                            <li class="timeline-text">Learned project basics using Node.js
+                                                and completed clone projects to enhance skills.</li>
                                         </p>
                                     </div>
-                                    {% endfor %}
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
         </div>
     </div>
