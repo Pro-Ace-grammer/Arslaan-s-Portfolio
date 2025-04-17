@@ -1,21 +1,213 @@
 <section class="service section" id="services">
-    {% for skill in skills %}
     <div class="container">
         <div class="row">
             <div class="section-title padd-15">
-                <h2>{{ skill.skill_name }}</h2>
+                <h2>Languages</h2>
             </div>
         </div>
         <div class="row">
-            {% for stack in skill.stack_set.all %}
             <div class="service-item">
                 <div class="service-item-inner">
-                    <div class="icon"><i class="{{ stack.icon_class }}"></i></div>
-                    <h4>{{stack.technology}}</h4>
+                    <div class="icon"><i class="fab fa-python"></i></div>
+                    <h4>Python</h4>
                 </div>
             </div>
-            {% endfor %}
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-code-branch"></i></div>
+                    <h4>C++</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-js-square"></i></div>
+                    <h4>JavaScript</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>SQL</h4>
+                </div>
+            </div>
         </div>
     </div>
-    {% endfor %}
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Frameworks & Libraries</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-server"></i></div>
+                    <h4>Django</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-plug"></i></div>
+                    <h4>DRF</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-bolt"></i></div>
+                    <h4>FastAPI</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-flask"></i></div>
+                    <h4>Flask</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h4>NumPy</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-chart-pie"></i></div>
+                    <h4>Pandas</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-chart-bar"></i></div>
+                    <h4>Matplotlib</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-chart-area"></i></div>
+                    <h4>Seaborn</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-brain"></i></div>
+                    <h4>Scikit-learn</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-robot"></i></div>
+                    <h4>TensorFlow</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-project-diagram"></i></div>
+                    <h4>Keras</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Asynchronous & Queues</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-stream"></i></div>
+                    <h4>Celery</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>Redis</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Databases</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>MySQL</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>PostgreSQL</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <h4>MongoDB</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="section-title padd-15">
+                <h2>Tools & Platforms</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-git-alt"></i></div>
+                    <h4>Git</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <h4>GitHub</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-paper-plane"></i></div>
+                    <h4>Postman</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-docker"></i></div>
+                    <h4>Docker</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-aws"></i></div>
+                    <h4>AWS</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fab fa-linux"></i></div>
+                    <h4>Linux</h4>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-item-inner">
+                    <div class="icon"><i class="fas fa-cogs"></i></div>
+                    <h4>CI/CD</h4>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
